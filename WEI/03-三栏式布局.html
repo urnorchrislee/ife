@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-三栏式布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #main{
+            width: 100%;
+            padding: 20px;
+            background-color: #eee;
+            border: 1px solid #999;
+            box-sizing: border-box;
+        }
+        #main .leftLogo{
+            width: 200px;
+            height: 120px;
+            background-color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+            float: left;
+        }
+        #main .rightContent{
+            overflow: hidden;
+            height: 100%;
+            background-color: #eee;
+            margin-left: 220px;
+            box-sizing: border-box;
+        }
+        #main .rightContent .conDes{
+            float: left;
+            width: calc(100% - 180px);
+            padding: 20px;
+            border: 1px solid #999;
+            background-color: #fff;
+        }
+        #main .rightContent .conDes p{
+            margin-top: 20px;
+            line-height: 30px;
+        }
+        #main .rightContent .conImg{
+            float: right;
+            border: 1px solid #999;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #fff;
+        }
+        #main .rightContent .conImg ul li{
+            list-style: none;
+            border: 1px solid #999;
+            box-sizing: border-box;
+        }
+        #main .rightContent .conImg ul li{
+            margin-bottom: 20px;
+        }
+        #main .rightContent .conImg ul li:last-child{
+            margin-bottom: 0;
+        }
+        #main .rightContent .conImg ul li img{
+            width: 78px;
+            height: 78px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<!-- main -->
+<div id="main">
+    <div class="leftLogo">
+        <img src="images/IMG_1058.JPG" alt="" style="width: 80px; height: 80px; border: 1px solid #999;">
+        <span style="vertical-align: top; margin-left: 10px; font-size: 14px">团队名称</span>
+    </div>
+    <div class="rightContent">
+        <div class="conDes">
+            <h4>关于你们团队的介绍</h4>
+            <p>可以给我们解释一下团队名称的来历,或是分别介绍你们的团队成员(以下为示例)</p>
+            <p>百度web前端技术学院 (Baidu Institude of Front-end Technology简称IFE)是一个由百度人力资源部校园招聘组、百度EFE团队联合出品的,面向在校大学生以及对前端技术有兴趣的前端在线学习平台,我们希望能够借助百度大量优秀的前端工程师以及丰富的前端知识积累,帮助人们更加有趣的高效、系统的学习web前端技术</p>
+            <p>2016春季班概述</p>
+            <p>百度前端技术学院是一个为大学生创办的免费的前端技术实践、分享、交流平台。由百度校园招聘组、百度校园品牌部、百度前端技术部以及多个百度的前端团队联合创办。
+
+                学院组织了一批百度在职工程师，精心编写了数十个实践编码任务，将技术知识点系统有机地串联在各个充满趣味与挑战的任务中，同学们通过实际地编码练习来掌握知识，再辅以互相评价、学习笔记等方式，加深对于学习内容的理解。
+
+                在过去的三年中，百度前端技术学院累积吸引了上万名同学参加，并且有数十名同学在学习后，顺利加入了百度，成为了百度的前端工程师。
+
+                2017年新学期，我们在保留原有的已经经历过实践历练的模式下，又加入了更多的工程师导师资源，以及新的内容，希望能够帮助有志于通过技术改变生活的同学们掌握到希望学到的技术。
+
+                新学期报名从即日起到3月15日，整个学期会进行到4月24日，期待大家的踊跃参加！</p>
+        </div>
+        <div class="conImg">
+            <ul>
+                <li><img src="images/IMG_1058.JPG" alt=""></li>
+                <li><img src="images/IMG_1058.JPG" alt=""></li>
+                <li><img src="images/IMG_1058.JPG" alt=""></li>
+                <li><img src="images/IMG_1058.JPG" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
